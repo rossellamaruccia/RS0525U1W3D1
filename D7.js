@@ -196,10 +196,12 @@ movies.forEach(function (element, i) {
   Scrivi una funzione per ottenere il numero di film contenuti nell'array fornito.
 */
 
+const numberOfMovies = movies.length
+console.log(numberOfMovies)
+
 /* ESERCIZIO 11 (map)
   Scrivi una funzione per creare un array con solamente i titoli dei film contenuti nell'array fornito.
 */
-
 
 const justMoviesNames = movies.map(movie) => {
   return movie.name
@@ -209,6 +211,7 @@ const justMoviesNames = movies.map(movie) => {
   Scrivi una funzione per ottenere dall'array fornito solamente i film usciti nel millennio corrente.
 */
 
+const recentMovies = movies.filter(movie) => movie.Year > 1999
 
 
 /* ESERCIZIO 13 (reduce)
