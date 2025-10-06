@@ -42,16 +42,16 @@ console.log(sum)
   Scrivi una funzione che, dato un array di soli numeri e un numero n come parametri, ritorni un secondo array con tutti i valori del precedente incrementati di n
 */
 
-// randomN = random10.map((value, n) => {
-//   return value + n
-// })
+randomN = random10.map((value, n) => {
+  return value + n
+})
 
 /* ESERCIZIO 7 (map)
   Scrivi una funzione che, dato un array di stringhe, ritorni un nuovo array contenente le lunghezze delle rispettive stringhe dell'array di partenza
   es.: ["EPICODE", "is", "great"] => [7, 2, 5]
 */
 
-// const RandomLength = randomWords.map((word) => {return word.length})
+const RandomLength = randomWords.map((word) => {return word.length})
 
 /* ESERCIZIO 8 (forEach o for)
   Scrivi una funzione per creare un array contenente tutti i valori DISPARI da 1 a 99.
@@ -200,9 +200,16 @@ movies.forEach(function (element, i) {
   Scrivi una funzione per creare un array con solamente i titoli dei film contenuti nell'array fornito.
 */
 
+
+const justMoviesNames = movies.map(movie) => {
+  return movie.name
+}
+
 /* ESERCIZIO 12 (filter)
   Scrivi una funzione per ottenere dall'array fornito solamente i film usciti nel millennio corrente.
 */
+
+
 
 /* ESERCIZIO 13 (reduce)
   Scrivi una funzione per calcolare la somma di tutti gli anni in cui sono stati prodotti i film contenuti nell'array fornito.
